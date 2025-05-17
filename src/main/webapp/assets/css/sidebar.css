@@ -1,0 +1,361 @@
+
+/*
+ * sidebar.css
+ * 侧边栏组件样式
+ */
+
+.sidebar {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 用户信息区域 */
+.sidebar-user {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar-user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sidebar-user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.sidebar-user-details h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sidebar-user-details p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 14px;
+}
+
+/* 用户统计信息 */
+.sidebar-user-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.stat-item {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-value {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3498db;
+}
+
+.stat-label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+/* 个人资料完成度 */
+.profile-completion {
+    margin-top: 15px;
+}
+
+.profile-completion-bar {
+    height: 6px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.completion-progress {
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 3px;
+}
+
+.completion-text {
+    font-size: 12px;
+    color: #777;
+}
+
+/* 导航菜单 */
+.sidebar-nav {
+    padding: 15px;
+}
+
+.sidebar-title {
+    font-size: 16px;
+    margin: 0 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.sidebar-subtitle {
+    font-size: 14px;
+    margin: 20px 0 10px;
+    color: #555;
+}
+
+.sidebar-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-menu li {
+    margin-bottom: 8px;
+}
+
+.sidebar-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #555;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.sidebar-menu li a i {
+    margin-right: 10px;
+    width: 16px;
+    text-align: center;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #f8f9fa;
+    color: #3498db;
+}
+
+.sidebar-menu li a.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.sidebar-menu li a.active i {
+    color: white;
+}
+
+.sidebar-menu li a .badge {
+    margin-left: auto;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 2px 6px;
+}
+
+/* 筛选区域 */
+.sidebar-filters {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.sidebar-filters .form-group {
+    margin-bottom: 15px;
+}
+
+.sidebar-filters label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* 活动类型列表 */
+.event-types {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-types li {
+    margin-bottom: 5px;
+}
+
+.event-types li a {
+    display: block;
+    padding: 8px 10px;
+    color: #555;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.event-types li a:hover {
+    background-color: #f8f9fa;
+    color: #3498db;
+}
+
+.event-types li a.active {
+    background-color: #3498db;
+    color: white;
+}
+
+/* 联系人列表 */
+.recent-contacts {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    margin-bottom: 5px;
+}
+
+.contact-list li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #555;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.contact-list li a:hover {
+    background-color: #f8f9fa;
+}
+
+.contact-list li a.active {
+    background-color: #f8f9fa;
+    border-left: 3px solid #3498db;
+}
+
+.contact-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.contact-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.contact-name {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.contact-last-message {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contact-unread-badge {
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 最近活动列表 */
+.recent-events {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-list li {
+    margin-bottom: 10px;
+}
+
+.event-list li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.event-list li a:hover {
+    background-color: #eee;
+}
+
+.event-date {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.event-day {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event-month {
+    font-size: 12px;
+}
+
+.event-info {
+    flex: 1;
+}
+
+.event-title {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.event-location {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+.view-all {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #3498db;
+}
